@@ -30,8 +30,8 @@ const services: Service[] = [
 
 export const Services: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-b from-white to-purple-50">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gradient-to-b from-white to-purple-50 fade-up">
+      <div className="max-w-7xl mx-auto fade-up-delay-1">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12">
           <p className="text-xs sm:text-sm uppercase tracking-wider text-gray-600 mb-2">WHAT WE OFFER</p>
@@ -48,7 +48,8 @@ export const Services: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gradient-to-b from-purple-500 to-purple-700 rounded-lg p-6 sm:p-8 text-white relative overflow-hidden"
+              className="bg-gradient-to-b from-purple-500 to-purple-700 rounded-lg p-6 sm:p-8 text-white relative overflow-hidden fade-up"
+              style={{ animationDelay: `${0.2 + index * 0.1}s` }}
             >
               <div className="relative z-10">
                 <div className="bg-purple-800 w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center mb-4 text-xl sm:text-2xl">

@@ -4,8 +4,8 @@ export const Footer: React.FC = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-t from-purple-900 via-purple-800 to-purple-700 text-white pt-12 sm:pt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <footer className="bg-gradient-to-t from-purple-900 via-purple-800 to-purple-700 text-white pt-12 sm:pt-16 fade-in">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 fade-up-delay-1">
         {/* Top CTA row */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-white/10">
           <div>

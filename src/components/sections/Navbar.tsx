@@ -3,14 +3,14 @@ import { Button } from '../ui/Button';
 
 export const Navbar: React.FC = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-30">
+    <header className="fixed top-0 left-0 right-0 z-30 fade-in">
       {/* Gradient overlay to sit nicely on top of the hero image */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-transparent" />
 
       <nav className="relative pointer-events-auto max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
         {/* Brand */}
         <div className="flex items-center gap-2">
-          <div className="h-8 w-8 rounded-full bg-white/10 border border-white/40 flex items-center justify-center text-xs text-white font-semibold">
+          <div className="h-8 w-8 rounded-full bg-white/10 border border-white/40 flex items-center justify-center text-xs text-white font-semibold float-slow">
             ML
           </div>
           <div className="leading-tight">
