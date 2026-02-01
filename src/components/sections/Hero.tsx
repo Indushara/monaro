@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Brand Name Overlay - Responsive */}
-      <div className="absolute top-4 sm:top-8 left-4 sm:left-8 right-4 sm:right-8 z-20 flex flex-col sm:flex-row justify-between items-start sm:items-start">
+      <div className="absolute top-4 sm:top-8 left-4 sm:left-8 right-4 sm:right-8 z-20 flex flex-col sm:flex-row justify-between items-start sm:items-start fade-in-slow">
         <div className="mb-2 sm:mb-0">
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold text-white leading-tight">
             DISCOVER<br className="sm:hidden" /> MONARO
@@ -33,8 +33,8 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Main Content - Centered */}
-      <div className="relative z-10 text-center px-4 sm:px-6 md:px-8 max-w-5xl mx-auto pt-32 sm:pt-40 md:pt-48">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+      <div className="relative z-10 text-center px-4 sm:px-6 md:px-8 max-w-5xl mx-auto pt-32 sm:pt-40 md:pt-48 fade-up">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 sm:mb-6 leading-tight float-slow">
           PROPERTY
         </h2>
         

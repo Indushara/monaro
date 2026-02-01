@@ -4,8 +4,8 @@ export const Footer: React.FC = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-t from-purple-900 via-purple-800 to-purple-700 text-white pt-12 sm:pt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <footer className="bg-gradient-to-t from-purple-900 via-purple-800 to-purple-700 text-white pt-12 sm:pt-16 fade-in">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 fade-up-delay-1">
         {/* Top CTA row */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-white/10">
           <div>
@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-purple-100/90">
               <li>
                 <a
-                  href="#home"
+                  href="/"
                   className="hover:text-white transition-colors duration-150"
                 >
                   Home
@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#featured"
+                  href="/#featured"
                   className="hover:text-white transition-colors duration-150"
                 >
                   Properties
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#services"
+                  href="/#services"
                   className="hover:text-white transition-colors duration-150"
                 >
                   Services
@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="hover:text-white transition-colors duration-150"
                 >
                   Contact

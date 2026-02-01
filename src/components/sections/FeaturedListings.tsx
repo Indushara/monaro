@@ -56,8 +56,8 @@ const properties: Property[] = [
 
 export const FeaturedListings: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white fade-up">
+      <div className="max-w-7xl mx-auto fade-up-delay-1">
         {/* Section Header */}
         <div className="mb-8 sm:mb-12">
           <p className="text-xs sm:text-sm uppercase tracking-wider text-gray-600 mb-2">FEATURED LISTINGS</p>
@@ -70,7 +70,7 @@ export const FeaturedListings: React.FC = () => {
         </div>
 
         {/* 3D House Model Placeholder */}
-        <div className="mb-8 sm:mb-12 flex justify-center sm:justify-end">
+        <div className="mb-8 sm:mb-12 flex justify-center sm:justify-end fade-up-delay-2">
           <div className="w-full sm:w-3/4 md:w-1/2 h-48 sm:h-64 bg-gray-100 rounded-lg flex items-center justify-center">
             <p className="text-gray-400 text-sm sm:text-base">3D House Model</p>
           </div>
@@ -78,8 +78,12 @@ export const FeaturedListings: React.FC = () => {
 
         {/* Property Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
-          {properties.map((property) => (
-            <Card key={property.id} className="overflow-hidden">
+          {properties.map((property, index) => (
+            <Card
+              key={property.id}
+              className="overflow-hidden fade-up"
+              style={{ animationDelay: `${0.2 + index * 0.1}s` }}
+            >
               <div className="relative h-56 sm:h-64">
                 <Image
                   src={property.image}

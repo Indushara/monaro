@@ -4,9 +4,9 @@ import { Button } from '../ui/Button';
 
 export const TrustedPartner: React.FC = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white fade-up">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center fade-up-delay-1">
           {/* Left Side - Statistics */}
           <div className="grid grid-cols-2 gap-4 sm:gap-6 order-2 lg:order-1">
             <StatBox value="20+" label="YEARS OF EXPERIENCE" variant="primary" />
