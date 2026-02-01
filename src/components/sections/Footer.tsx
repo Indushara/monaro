@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-purple-100/90">
               <li>
                 <a
-                  href="#home"
+                  href="/"
                   className="hover:text-white transition-colors duration-150"
                 >
                   Home
@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#featured"
+                  href="/#featured"
                   className="hover:text-white transition-colors duration-150"
                 >
                   Properties
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#services"
+                  href="/#services"
                   className="hover:text-white transition-colors duration-150"
                 >
                   Services
@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="hover:text-white transition-colors duration-150"
                 >
                   Contact

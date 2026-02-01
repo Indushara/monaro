@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Button } from '../ui/Button';
 
 export const Navbar: React.FC = () => {
@@ -9,7 +10,7 @@ export const Navbar: React.FC = () => {
 
       <nav className="relative pointer-events-auto max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
         {/* Brand */}
-        <div className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <div className="h-8 w-8 rounded-full bg-white/10 border border-white/40 flex items-center justify-center text-xs text-white font-semibold float-slow">
             ML
           </div>
@@ -21,35 +22,37 @@ export const Navbar: React.FC = () => {
               Lands
             </p>
           </div>
-        </div>
+        </Link>
 
         {/* Links */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white">
-          <a href="#home" className="hover:text-purple-200 transition-colors">
+          <Link href="/" className="hover:text-purple-200 transition-colors">
             Home
-          </a>
-          <a
-            href="#featured"
+          </Link>
+          <Link
+            href="/#featured"
             className="hover:text-purple-200 transition-colors"
           >
             Blog
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/contact"
             className="hover:text-purple-200 transition-colors"
           >
-            Contact
-          </a>
+            Contact Us
+          </Link>
         </div>
 
-        {/* Mobile CTA / menu placeholder */}
+        {/* Mobile CTA - redirects to Contact page */}
         <div className="flex md:hidden">
-          <Button
-            variant="primary"
-            className="!px-4 !py-2 text-xs"
-          >
-            Contact
-          </Button>
+          <Link href="/contact">
+            <Button
+              variant="primary"
+              className="!px-4 !py-2 text-xs"
+            >
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </nav>
     </header>
