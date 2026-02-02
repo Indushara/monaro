@@ -29,10 +29,7 @@ export const Navbar: React.FC = () => {
           <Link href="/" className="hover:text-purple-200 transition-colors">
             Home
           </Link>
-          <Link
-            href="/#featured"
-            className="hover:text-purple-200 transition-colors"
-          >
+          <Link href="/blog" className="hover:text-purple-200 transition-colors">
             Blog
           </Link>
           <Link
